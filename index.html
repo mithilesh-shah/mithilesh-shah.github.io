@@ -5,103 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Academic website for Mithilesh Shah, doctoral student in Marketing at London Business School.">
     <title>Mithilesh Shah | Marketing PhD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,520&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="site-shell">
-      <aside class="side-panel" aria-label="Identity and navigation">
-        <div class="identity">
-          <canvas id="math-orb" width="260" height="260" aria-label="Animated mathematical figure"></canvas>
-          <canvas id="name-wave" width="320" height="140" aria-hidden="true"></canvas>
-          <canvas id="name-lattice" width="320" height="190" aria-hidden="true"></canvas>
-          <a class="wordmark" href="#about" aria-label="Mithilesh Shah home">
-            <span class="name-first">mithilesh</span><span class="name-separator">::</span><span class="name-last">shah</span>
-          </a>
-        </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="#about" data-route="about">. about</a>
-          <div class="nav-group" data-group="research">
-            <a href="#research" data-route="research">. research</a>
-            <div class="sub-nav" aria-label="Research subsections">
-              <a href="#working" data-route="working">working papers</a>
-              <a href="#pipeline" data-route="pipeline">work in progress</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Mithilesh Shah home">
+        <span>Mithilesh</span>
+        <span>Shah</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#papers">Papers</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cv-link" href="resume_mithilesh.pdf">CV</a>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" id="top" aria-labelledby="hero-title">
+        <canvas id="geometry-field" aria-hidden="true"></canvas>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">doctoral student in marketing · london business school</p>
+            <h1 id="hero-title">Studying markets where climate, technology, and everyday economic life meet.</h1>
+            <p class="intro">
+              I am Mithilesh Shah, a PhD student in Marketing at London Business School. My work
+              studies how people, firms, and workers make decisions in emerging markets when
+              infrastructure, climate shocks, and AI change the constraints around them.
+            </p>
+            <div class="hero-actions" aria-label="Quick links">
+              <a href="#papers">Read research</a>
+              <a href="mailto:mithileshshah@london.edu">Email me</a>
             </div>
           </div>
-          <a href="#teaching" data-route="teaching">. teaching</a>
-          <a href="#background" data-route="background">. background</a>
-          <a href="#contact" data-route="contact">. contact</a>
-          <a href="resume_mithilesh.pdf">. cv</a>
-        </nav>
 
-        <div class="side-footer">
-          <a class="school-logo" href="https://www.london.edu/" aria-label="London Business School">
-            <img src="assets/lbs-logo.svg" alt="London Business School">
-          </a>
+          <aside class="signal-panel" aria-label="Research summary">
+            <canvas id="identity-figure" width="360" height="360" aria-label="Animated geometric figure"></canvas>
+            <div class="figure-wordmark" aria-hidden="true">mithilesh<span>::</span>shah</div>
+            <dl>
+              <div>
+                <dt>Themes</dt>
+                <dd>Climate, entrepreneurship, AI, education, consumer demand</dd>
+              </div>
+              <div>
+                <dt>Methods</dt>
+                <dd>Field experiments, quasi-experimental methods, surveys, primary data</dd>
+              </div>
+              <div>
+                <dt>Setting</dt>
+                <dd>Emerging markets, with current projects rooted in India and low-income labor markets</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
-      </aside>
+      </section>
 
-      <main class="content-stage">
-        <canvas id="field-canvas" aria-hidden="true"></canvas>
+      <section class="section-pad overview" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">research</p>
+          <h2 id="research-title">Questions I Keep Returning To</h2>
+        </div>
+        <div class="question-grid">
+          <article>
+            <span>01</span>
+            <h3>How do households update aspirations?</h3>
+            <p>
+              I study how exposure to new places, opportunities, and information can change
+              investments in human capital, especially education.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>What makes climate action adoptable?</h3>
+            <p>
+              My work examines how marketing frames and local delivery shape environmentally
+              beneficial consumer behavior.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Can AI improve economic outcomes?</h3>
+            <p>
+              I am interested in whether AI-enabled training and AI agents can help workers and
+              small firms improve income, productivity, and business outcomes.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <section class="content-panel is-active" id="about" data-panel="about" aria-labelledby="about-title">
-          <p class="kicker">doctoral student in marketing</p>
-          <h1 id="about-title">Mithilesh Pradeep Shobha Shah</h1>
-          <p class="lead">
-            I am a doctoral student in Marketing at London Business School studying how markets
-            evolve when people, firms, and technologies meet under conditions of constraint.
-          </p>
-          <p>
-            My research is grounded in emerging markets, where climate shocks, infrastructure,
-            entrepreneurship, and AI are reshaping everyday economic decisions. I ask how these
-            forces influence what households invest in, how firms grow, and how workers adapt.
-          </p>
-          <p>
-            Methodologically, I combine field experiments, quasi-experimental designs, survey
-            research, and primary data collection. Substantively, I am interested in marketing
-            that helps explain development challenges and design better interventions for a
-            changing world.
-          </p>
-        </section>
-
-        <section class="content-panel" id="research" data-panel="research" aria-labelledby="research-title">
-          <p class="kicker">themes + methods</p>
-          <h2 id="research-title">Research Interests</h2>
-          <dl class="compact-list">
-            <div>
-              <dt>themes</dt>
-              <dd>Impact of climate change on consumers and firms</dd>
-            </div>
-            <div>
-              <dt>themes</dt>
-              <dd>Entrepreneurship in emerging markets</dd>
-            </div>
-            <div>
-              <dt>themes</dt>
-              <dd>Impact of AI on workers and firms in emerging markets</dd>
-            </div>
-            <div>
-              <dt>methods</dt>
-              <dd>Field experiments, quasi-experimental methods, survey design, primary field data collection</dd>
-            </div>
-          </dl>
-        </section>
-
-        <section class="content-panel" id="working" data-panel="working" aria-labelledby="working-title">
-          <p class="kicker">working papers</p>
-          <h2 id="working-title">Research in Circulation</h2>
-          <article class="paper">
-            <span>Revise &amp; Resubmit at Marketing Science</span>
+      <section class="section-pad papers" id="papers" aria-labelledby="papers-title">
+        <div class="section-heading">
+          <p class="eyebrow">papers</p>
+          <h2 id="papers-title">Research in Circulation</h2>
+        </div>
+        <div class="paper-list">
+          <article class="paper-card">
+            <p class="status">Revise &amp; Resubmit at Marketing Science</p>
             <h3>Highways and Growth in Consumer Demand in Education: Insights from India</h3>
             <p class="authors">With Thomas Zhang, Rajesh Chandy, Om Narasimhan</p>
             <p>
               Using India&apos;s Golden Quadrilateral highway construction as a natural experiment,
               this paper shows that rural households newly able to visit urban areas increased
-              spending on education.
+              their spending on education.
             </p>
           </article>
-          <article class="paper">
-            <span>Revise &amp; Resubmit, Registered Report at Journal of Consumer Research</span>
+          <article class="paper-card">
+            <p class="status">Revise &amp; Resubmit, Registered Report at Journal of Consumer Research</p>
             <h3>Marketing Trees: Evidence from a Field Experiment in India</h3>
             <p class="authors">With Catherine Cole, Gita Johar, Rajesh Chandy, Gaurav Mehta and SCP collaborators</p>
             <p>
@@ -109,91 +125,103 @@
               households to buy and plant trees.
             </p>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="content-panel" id="pipeline" data-panel="pipeline" aria-labelledby="pipeline-title">
-          <p class="kicker">pipeline</p>
-          <h2 id="pipeline-title">Work in Progress</h2>
-          <ul class="project-list">
-            <li>
-              <span>01</span>
-              <p>Investing in the next generation: impact of climate change on education consumption. With Rajesh Chandy.</p>
-            </li>
-            <li>
-              <span>02</span>
-              <p>Boosting innovation funding access: evidence from a multi-stage SME outreach experiment. With Rajesh Chandy, David Faro, Alexandra Avdeenko, Fabian Scheifele.</p>
-            </li>
-            <li>
-              <span>03</span>
-              <p>Improving worker incomes through AI-enabled training: evidence from a field experiment in a low-income labor market. With Rajesh Chandy.</p>
-            </li>
-            <li>
-              <span>04</span>
-              <p>Do AI agents improve business outcomes? Evidence from a field experiment. With Rajesh Chandy, Jake Kendall, Kelvin Umechukwu, Yashar Atefi.</p>
-            </li>
-          </ul>
-        </section>
+      <section class="section-pad pipeline" aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">work in progress</p>
+          <h2 id="pipeline-title">Current Projects</h2>
+        </div>
+        <ol class="project-list">
+          <li>
+            <h3>Investing in the next generation</h3>
+            <p>Impact of climate change on education consumption. With Rajesh Chandy.</p>
+          </li>
+          <li>
+            <h3>Boosting innovation funding access</h3>
+            <p>Evidence from a multi-stage SME outreach experiment. With Rajesh Chandy, David Faro, Alexandra Avdeenko, Fabian Scheifele.</p>
+          </li>
+          <li>
+            <h3>Improving worker incomes through AI-enabled training</h3>
+            <p>Evidence from a field experiment in a low-income labor market. With Rajesh Chandy.</p>
+          </li>
+          <li>
+            <h3>Do AI agents improve business outcomes?</h3>
+            <p>Evidence from a field experiment. With Rajesh Chandy, Jake Kendall, Kelvin Umechukwu, Yashar Atefi.</p>
+          </li>
+        </ol>
+      </section>
 
-        <section class="content-panel" id="teaching" data-panel="teaching" aria-labelledby="teaching-title">
-          <p class="kicker">teaching</p>
-          <h2 id="teaching-title">Teaching Experience</h2>
-          <article class="paper">
-            <span>Spring 2025</span>
+      <section class="section-pad two-column" id="teaching" aria-labelledby="teaching-title">
+        <div>
+          <p class="eyebrow">teaching</p>
+          <h2 id="teaching-title">Teaching</h2>
+          <article class="plain-block">
+            <p class="status">Spring 2025</p>
             <h3>Teaching Assistant, London Business School</h3>
             <p>Innovation for Impact (MBA), Rajesh Chandy and Nick Hughes.</p>
           </article>
-          <div class="skill-line">
-            <span>Stata</span>
-            <span>R</span>
-            <span>Python</span>
-            <span>Excel</span>
-            <span>QGIS</span>
-            <span>SurveyCTO</span>
-            <span>LaTeX</span>
-            <span>Quarto</span>
-          </div>
-        </section>
+        </div>
+        <div>
+          <p class="eyebrow">tools</p>
+          <h2>Research Toolkit</h2>
+          <ul class="tag-list" aria-label="Skills and tools">
+            <li>Stata</li>
+            <li>R</li>
+            <li>Python</li>
+            <li>Excel</li>
+            <li>QGIS</li>
+            <li>SurveyCTO</li>
+            <li>LaTeX</li>
+            <li>Quarto</li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="content-panel" id="background" data-panel="background" aria-labelledby="background-title">
-          <p class="kicker">education</p>
-          <h2 id="background-title">Academic Background</h2>
-          <ol class="timeline">
-            <li>
-              <time>2028 expected</time>
-              <p>Doctoral Student, Marketing, London Business School.</p>
-            </li>
-            <li>
-              <time>2020</time>
-              <p>MSc, Development Studies, London School of Economics and Political Science. Full scholarship. Honors: Applied Development Economics.</p>
-            </li>
-            <li>
-              <time>2017</time>
-              <p>MTech, Technology and Development, Indian Institute of Technology Bombay. Full scholarship.</p>
-            </li>
-            <li>
-              <time>2014</time>
-              <p>BTech, Instrumentation and Control Engineering, Vishwakarma Institute of Technology, Pune. Honors: Embedded Systems.</p>
-            </li>
-          </ol>
-        </section>
+      <section class="section-pad background" id="background" aria-labelledby="background-title">
+        <div class="section-heading">
+          <p class="eyebrow">background</p>
+          <h2 id="background-title">Academic Path</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time>2028 expected</time>
+            <p>Doctoral Student in Marketing, London Business School.</p>
+          </li>
+          <li>
+            <time>2020</time>
+            <p>MSc in Development Studies, London School of Economics and Political Science. Full scholarship; honors in Applied Development Economics.</p>
+          </li>
+          <li>
+            <time>2017</time>
+            <p>MTech in Technology and Development, Indian Institute of Technology Bombay. Full scholarship.</p>
+          </li>
+          <li>
+            <time>2014</time>
+            <p>BTech in Instrumentation and Control Engineering, Vishwakarma Institute of Technology, Pune. Honors in Embedded Systems.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
 
-        <section class="content-panel" id="contact" data-panel="contact" aria-labelledby="contact-title">
-          <p class="kicker">contact</p>
-          <h2 id="contact-title">London Business School</h2>
-          <p>
-            For research conversations, collaborations, or seminar invitations:
-          </p>
-          <p class="contact-links">
-            <a href="mailto:mithileshshah@london.edu">mithileshshah@london.edu</a>
-            <a href="tel:+447541345367">+44 7541 345367</a>
-            <a href="https://uk.linkedin.com/in/mithilesh-shah">linkedin.com/in/mithilesh-shah</a>
-          </p>
-          <p>
-            Languages: English, Hindi, Marathi.
-          </p>
-        </section>
-      </main>
-    </div>
+    <footer class="site-footer section-pad" id="contact">
+      <div>
+        <p class="eyebrow">contact</p>
+        <h2>Let&apos;s Talk</h2>
+      </div>
+      <address>
+        <a href="mailto:mithileshshah@london.edu">mithileshshah@london.edu</a>
+        <a href="tel:+447541345367">+44 7541 345367</a>
+        <a href="https://uk.linkedin.com/in/mithilesh-shah">LinkedIn</a>
+      </address>
+      <div class="footer-note">
+        <a class="school-logo" href="https://www.london.edu/" aria-label="London Business School">
+          <img src="assets/lbs-logo.svg" alt="London Business School">
+        </a>
+        <p>Languages: English, Hindi, Marathi.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
